@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Blog Matemático Interactivo</title>
+	
+	<style>
+	/* Paso 3: aquí van los estilos */
+	body {
+		font-family:Georgia, 'Times New Roman', Times, serif;
+		max-width: 700px;
+		margin: 20px auto;
+		padding: 10px;
+		color: #420b86;
+	}
+	h1 {
+		color: #6626cd;
+		cursor: pointer;
+		border-bottom: 2px solid #9f1961;
+		padding-bottom: 5px;
+	}
+	p {
+		font-size: 16px;
+		cursor: pointer;
+		background-color: #95efcd;
+		padding: 10px;
+		border-radius: 4px;
+	}
+	table {
+		width: 100%;
+  		border-collapse: collapse;
+  		margin: 30px 0px;
+	}
+	th, td {
+		border: 1px solid #000000;
+  		padding: 8px;
+  		text-align: left;
+  		cursor: pointer;
+	}
+	th {
+		background-color: #288aca;
+  		color: #07f369;
+	}
+	ul, ol {
+  		background-color: #9cd4ed;
+  		padding: 15px 30px;
+  		border: 1px solid #ddd;
+	}
+	li {
+  		margin: 5px 0;
+  		cursor: pointer;
+  		padding: 4px;
+	}
+	.oculto {
+  		display: none;
+	}
+	.resaltado {
+  		background-color: #288aca;
+  		color: #95efcd;
+	}
+		.cambio-color {
+  		color: #0b9a63;
+	}
+
+	</style>
+</head>
+<body>
+	<!-- Paso 2: aquí va el contenido -->
+	<h1 id="titulo" onclick="cambiarColorTitulo()">Blog Matemático Interactivo</h1>
+
+	<p onclick="alternarLista('conceptos')">
+		Conceptos Básicos (Haz clic aquí para mostrar u ocultar la lista)
+	</p>
+
+	<ul id="conceptos">
+		<li onclick="resaltarElemento(this)"><strong>Álgebra:</strong> Manipulación de símbolos y ecuaciones.</li>
+		<li onclick="resaltarElemento(this)"><strong>Geometría:</strong> Estudio de las propiedades de figuras y espacios.</li>
+		<li onclick="resaltarElemento(this)"><strong>Cálculo:</strong> Análisis del cambio y del movimiento.</li>
+		<li onclick="resaltarElemento(this)"><strong>Estadística:</strong> Análisis y tratamiento de datos.</li>
+	</ul>
+
+	<p>Tabla de Fórmulas (Haz clic en cualquier celda para cambiar su color)</p>
+	<table>
+		<tr>
+			<th>Tema</th>
+			<th>Fórmula</th>
+		</tr>
+		<tr>
+			<td onclick="resaltarElemento(this)"><strong>Área del triángulo</strong></td>
+			<td onclick="resaltarElemento(this)">Base por altura dividido entre 2</td>
+		</tr>
+		<tr>
+			<td onclick="resaltarElemento(this)"><strong>Teorema de Pitágoras</strong></td>
+			<td onclick="resaltarElemento(this)">a elevado al cuadrado más b elevado al cuadrado igual a c elevado al cuadrado</td>
+		</tr>
+		<tr>
+			<td onclick="resaltarElemento(this)"><strong>Perímetro del círculo</strong></td>
+			<td onclick="resaltarElemento(this)">2 por Pi por radio</td>
+		</tr>
+	</table>
+
+	<p onclick="alternarLista('pasos')">
+		Pasos para resolver un problema (Haz clic aquí para mostrar u ocultar los pasos)
+	</p>
+
+	<ol id="pasos">
+		<li onclick="resaltarElemento(this)">Comprender el problema planteado.</li>
+		<li onclick="resaltarElemento(this)">Trazar un plan o seleccionar la fórmula.</li>
+		<li onclick="resaltarElemento(this)">Ejecutar las operaciones requeridas.</li>
+		<li onclick="resaltarElemento(this)">Revisar y verificar la solución.</li>
+	</ol>
+
+	<script>
+	// Paso 4: aquí va el JavaScript
+
+		function cambiarColorTitulo() {
+  			var titulo = document.getElementById('titulo');
+  			titulo.classList.toggle('cambio-color');
+	}
+		function alternarLista(id) {
+  			var lista = document.getElementById(id);
+  			lista.classList.toggle('oculto');
+	}
+		function resaltarElemento(elemento) {
+  			elemento.classList.toggle('resaltado');
+		}
+	</script>
+</body>
+</html>
