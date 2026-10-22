@@ -8,16 +8,16 @@ const publicaciones = [
   },
   {
     id: "02f",
-    titulo: "Factorización 1",
+    titulo: "Factorización I",
     archivo: "entradas/Factorizacion 1.js",
     fecha: "2026-10-15",
     resumen: "Factorización y sus algoritmos de resolución."
   },
   {
-    id: "demo2",
-    titulo: "Mi entrada super chidoris",
-    archivo: "entradas/demo2.js",
-    fecha: "2026-10-13",
-    resumen: "Mi resumen chidoris."
+    id: "03f",
+    titulo: "Factorización II",
+    archivo: "entradas/Factorizacion2.js",
+    fecha: "2026-10-22",
+    resumen: "Factorización y sus algoritmos de resolución"
   },
 ];
