@@ -1,6 +1,5 @@
 contenidoEntrada = `
 <section>
-    <h2>Factorización I</h2>
     <p>Es el proceso inverso a la multiplicación. 
     Consiste en expresar una expresión algebraica como el producto de sus factores más simples.</p>
     
