@@ -20,4 +20,11 @@ const publicaciones = [
     fecha: "2026-10-22",
     resumen: "Factorización y sus algoritmos de resolución"
   },
+  {
+    id: "04e",
+    titulo: "Ecuaciones de Primer Grado",
+    archivo: "entradas/Ecuaciones.js",
+    fecha: "2026-10-29",
+    resumen: "Ecuaciones de Primer Grado y sus algoritmos de resolución"
+  },
 ];
